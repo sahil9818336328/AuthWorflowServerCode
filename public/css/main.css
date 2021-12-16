@@ -1,0 +1,171 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/Poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: Lato-Regular;
+  src: url('../fonts/Lato/Lato-Regular.ttf');
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ S-Text 0 - 15 ]*/
+
+.s1-txt1 {
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #e5e5e5;
+  line-height: 1.333333;
+}
+
+.s1-txt2 {
+  font-family: Poppins-Regular;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ M-Text 16 - 25 ]*/
+
+.m1-txt2 {
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.333333;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ L-Text >= 26 ]*/
+.l1-txt1 {
+  font-family: Poppins-Regular;
+  font-size: 36px;
+  color: #fff;
+  line-height: 1.333333;
+}
+
+.l1-txt2 {
+  font-family: Poppins-Bold;
+  font-size: 36px;
+  color: #fff;
+  line-height: 1.333333;
+}
+
+/*==================================================================
+   SHAPE 
+==================================================================*/
+/*//////////////////////////////////////////////////////////////////
+[ Size ]*/
+.size1 {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.size2 {
+  width: 155px;
+  height: 155px;
+}
+
+.size3 {
+  min-width: 170px;
+  height: 50px;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Width ]*/
+.wsize1 {
+  max-width: 700px;
+}
+
+.bg-img1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Border ]*/
+.bor1 {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+/*---------------------------------------------*/
+.overlay1 {
+  position: relative;
+  z-index: 1;
+}
+.overlay1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #7579ff;
+  background: -webkit-linear-gradient(bottom, #b224ef, #7579ff);
+  background: -o-linear-gradient(bottom, #b224ef, #7579ff);
+  background: -moz-linear-gradient(bottom, #b224ef, #7579ff);
+  background: linear-gradient(bottom, #b224ef, #7579ff);
+  opacity: 0.9;
+}
+
+/*---------------------------------------------*/
+.how-btn1 {
+  background: transparent;
+  border: 1px solid #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.how-btn1::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #7579ff;
+  background: -webkit-linear-gradient(top, #b224ef, #7579ff);
+  background: -o-linear-gradient(top, #b224ef, #7579ff);
+  background: -moz-linear-gradient(top, #b224ef, #7579ff);
+  background: linear-gradient(top, #b224ef, #7579ff);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+}
+
+.how-btn1:hover {
+  color: #fff;
+  border: 0;
+  transition: all 2s ease;
+}
+
+.how-btn1:hover:before {
+  opacity: 1;
+}
+
+/*---------------------------------------------*/
+.wrappic1 {
+  display: block;
+  flex-grow: 1;
+}
+
+.wrappic1 img {
+  max-width: 100%;
+}
